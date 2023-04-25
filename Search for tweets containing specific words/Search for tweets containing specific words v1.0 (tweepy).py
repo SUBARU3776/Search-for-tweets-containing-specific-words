@@ -11,7 +11,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy. API(auth)
 
 #特定のキーワードを含む最新の10件のツイートを検索
-search_query="これから大切なことを言います。"
+search_query="hoge_hoge_hoge"
 search_results = api.search_tweets(q=search_query, count=10)
 
 # 検索結果を表示
