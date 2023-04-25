@@ -13,7 +13,7 @@ api = tweepy.API(auth)
 
 # ワードサーチを実行
 all_tweets = []
-query = '@_SUBARU_3776_'
+query = 'hoge_hoge_hoge'
 
 # 1000件で抽出はストップ
 max_tweets = 1000
