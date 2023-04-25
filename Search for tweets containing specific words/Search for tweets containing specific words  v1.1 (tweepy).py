@@ -1,10 +1,10 @@
 import tweepy
 
 # Twitter APIの認証情報
-consumer_key = 'tZxS08taz6eqPJHsPkt5bsD19'
-consumer_secret = 'zIGuCCxRmeJ7UMiRErHIPimIq6MnF3BXybK69LEX3KaCGPourz'
-access_token = '269515119-of2MGRqJQYOUpB12JtJUEJhrqcZ76uaB5iCXHgXy'
-access_token_secret = 'pzhfaSDYNWe47nTVajskGrth1Zcwr9kuZCphOOesHk2k5'
+consumer_key= 'Your_consumer_key'
+consumer_secret = 'Your_consumer_secret'
+access_token = 'Your_access_token' 
+access_token_secret = 'Your_access_token_secret'
 
 # 認証情報を使用して Twitter APIにアクセス
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
