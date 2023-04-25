@@ -13,7 +13,7 @@ api = tweepy.API(auth)
 
 # 特定のキーワードを含む最新の10件のツイートを検索
 all_tweets = []
-query = "これから大切なことを言います。"
+query = "hoge_hoge_hoge"
 search_results = api.search_tweets(q=query, count=10)
 for tweet in search_results:
     all_tweets.append(tweet.text)
