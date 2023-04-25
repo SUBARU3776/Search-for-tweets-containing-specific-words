@@ -1,8 +1,8 @@
 # 認証情報を設定
-consumer_key = 'tZxS08taz6eqPJHsPkt5bsD19'
-consumer_secret = 'zIGuCCxRmeJ7UMiRErHIPimIq6MnF3BXybK69LEX3KaCGPourz'
-access_token = '269515119-of2MGRqJQYOUpB12JtJUEJhrqcZ76uaB5iCXHgXy'
-access_token_secret = 'pzhfaSDYNWe47nTVajskGrth1Zcwr9kuZCphOOesHk2k5'
+consumer_key= 'Your_consumer_key'
+consumer_secret = 'Your_consumer_secret'
+access_token = 'Your_access_token' 
+access_token_secret = 'Your_access_token_secret'
 
 # OAuth認証を処理するための設定
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -27,7 +27,7 @@ while len(all_tweets) < max_tweets:
     if not tweets:
         break
     all_tweets.extend(tweets[:min(max_tweets - len(all_tweets), 100)])
-    time.sleep(5) # 5秒間のアイドリングを挟む
+    time.sleep(1) # 1秒間のアイドリングを挟む
     
 # ツイートの情報を取得してデータフレームに追加
 data = pd.DataFrame(data=[[tweet.id, tweet.created_at.astimezone(timezone(timedelta(hours=+9))), tweet.user.id, tweet.user.name, tweet.full_text.replace('\n', ' '), tweet.retweeted_status.id_str if hasattr(tweet, 'retweeted_status') else None] for tweet in all_tweets], columns=['tweet_id', 'created_at', 'user_id', 'user_name', 'tweet_text', 'retweeted_id'])
