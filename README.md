@@ -1,2 +1,2 @@
 # Search-for-tweets-containing-specific-words
-##### なんというか、ノリで書き出してみました･･･
+##### 指定したキーワードからツイートを取得します。
